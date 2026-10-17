@@ -1,2 +1,2 @@
-# educa-o-finaneira.WEB
+# educacão-finaneira.WEB
 Aplicação web para instruir pessoas a melhorar sua educação financeira.
