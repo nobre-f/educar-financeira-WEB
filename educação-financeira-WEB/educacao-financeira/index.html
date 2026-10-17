@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Financeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Educação Financeira</h1>
+        <p>Aprenda a cuidar melhor do seu dinheiro!</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Como organizar seu dinheiro?</h2>
+
+            <p>
+                A educação financeira ajuda você a controlar seus gastos,
+                economizar e planejar seus objetivos.
+            </p>
+
+            <img
+                src="https://canaldoensino.com.br/blog/wp-content/uploads/2017/11/Educacao-financeira-01.jpg"
+                alt="Ilustração sobre educação financeira"
+                width="600"
+                height="250"
+            >
+
+            <p>
+                Aprender a economizar é importante.
+                <q>Pequenas atitudes podem fazer a diferença.</q>
+            </p>
+
+            <p>
+                Saiba mais sobre educação financeira no
+                <a
+                    href="https://www.bcb.gov.br/cidadaniafinanceira"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Banco Central do Brasil
+                </a>.
+            </p>
+        </section>
+
+        <article>
+            <h2>Por que aprender educação financeira?</h2>
+
+            <p>
+                Aprender a administrar o dinheiro ajuda a tomar decisões
+                conscientes, evitar dívidas e planejar o futuro.
+            </p>
+        </article>
+
+        <aside class="destaque">
+            <h3>Dica financeira</h3>
+
+            <p>
+                Antes de comprar algo, verifique se essa despesa
+                cabe no seu orçamento.
+            </p>
+        </aside>
+
+        <section>
+            <h2>5 hábitos financeiros</h2>
+
+            <ol>
+                <li>Anotar todos os gastos.</li>
+                <li>Separar as despesas essenciais.</li>
+                <li>Evitar compras por impulso.</li>
+                <li>Guardar uma parte da renda.</li>
+                <li>Definir metas financeiras.</li>
+            </ol>
+
+            <h3>Conceito importante</h3>
+
+            <p>
+                <abbr title="Educação Financeira">EF</abbr>
+                significa aprender a administrar melhor o dinheiro.
+            </p>
+
+            <blockquote>
+                Planejar os gastos ajuda a tomar decisões financeiras
+                mais conscientes.
+            </blockquote>
+
+            <p>
+                Fonte de informação:
+                <cite>Banco Central do Brasil</cite>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Exemplo de orçamento mensal</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Valor mensal</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Alimentação</td>
+                        <td>R$ 500,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Transporte</td>
+                        <td>R$ 200,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Economia</td>
+                        <td>R$ 150,00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Vídeo educativo</h3>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/jW3p50Kyoe8"
+                title="Vídeo educativo sobre educação financeira"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+            ></iframe>
+        </section>
+
+        <section>
+            <h2>Planeje seu orçamento</h2>
+
+            <p>
+                Preencha os campos abaixo para calcular quanto dinheiro
+                sobra ou falta no seu orçamento mensal.
+            </p>
+
+            <form id="formulario">
+
+                <label for="nome">Nome:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+                <label for="email">E-mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seuemail@exemplo.com"
+                    required
+                >
+
+                <label for="renda">Renda mensal (R$):</label>
+                <input
+                    type="number"
+                    id="renda"
+                    name="renda"
+                    placeholder="Ex.: 2000"
+                    min="0"
+                    step="0.01"
+                    required
+                >
+
+                <label for="gastos">Gastos mensais (R$):</label>
+                <input
+                    type="number"
+                    id="gastos"
+                    name="gastos"
+                    placeholder="Ex.: 1500"
+                    min="0"
+                    step="0.01"
+                    required
+                >
+
+                <label for="objetivo">Seu principal objetivo:</label>
+                <select id="objetivo" name="objetivo" required>
+                    <option value="">Selecione</option>
+                    <option value="economizar">Economizar</option>
+                    <option value="quitar">Quitar dívidas</option>
+                    <option value="planejar">Planejar compras</option>
+                </select>
+
+                <button type="submit">Calcular orçamento</button>
+                <button type="reset">Limpar formulário</button>
+
+            </form>
+
+            <div id="resultado"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto de Desenvolvimento Web</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
