@@ -1,4 +1,3 @@
-
 const formulario = document.getElementById("formulario");
 const resultado = document.getElementById("resultado");
 
@@ -10,11 +9,6 @@ formulario.addEventListener("submit", function(event) {
     const gastos = Number(document.getElementById("gastos").value);
 
     let saldo = renda - gastos;
-    const dinheiro = saldo.toLocaleString("pt-BR", {
-        style: "currency",
-        currency: "BRL"
-    });
-
     let mensagem = "";
 
     if (saldo > 0) {
@@ -26,18 +20,10 @@ formulario.addEventListener("submit", function(event) {
     }
 
     resultado.innerHTML = `
-        <h3></h3>
-        <p>Sua renda: ${renda.toLocaleString("pt-BR", {
-            style: "currency",
-            currency: "BRL"
-        })}</p>
-        <p>Seus gastos: ${gastos.toLocaleString("pt-BR", {
-            style: "currency",
-            currency: "BRL"
-        })}</p>
-        <p>Saldo: ${dinheiro}</p>
+        <h3>Olá, ${nome}!</h3>
+        <p>Sua renda: R$ ${renda}</p>
+        <p>Seus gastos: R$ ${gastos}</p>
+        <p>Saldo: R$ ${saldo}</p>
         <p>${mensagem}</p>
     `;
-
-    resultado.querySelector("h3").textContent = `Olá, ${nome}!`;
 });
